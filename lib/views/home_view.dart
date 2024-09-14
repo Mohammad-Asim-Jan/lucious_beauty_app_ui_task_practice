@@ -118,7 +118,7 @@ class HomeView extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  const Text(
                     'Our Services',
                     style: TextStyle(
                       fontSize: 16,
@@ -128,7 +128,7 @@ class HomeView extends StatelessWidget {
                   ),
                   Row(
                     children: [
-                      Text(
+                      const Text(
                         'See all',
                         style: TextStyle(
                             fontSize: 12,
@@ -137,7 +137,7 @@ class HomeView extends StatelessWidget {
                       ),
                       Icon(
                         Icons.arrow_right_alt_rounded,
-                        color: Color(0xff888888),
+                        color: const Color(0xff888888),
                         size: screenWidth * 0.028
                         ,
                       )
@@ -147,7 +147,7 @@ class HomeView extends StatelessWidget {
               ),Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  const Text(
                     'Upcoming Bookings',
                     style: TextStyle(
                       fontSize: 16,
@@ -157,7 +157,7 @@ class HomeView extends StatelessWidget {
                   ),
                   Row(
                     children: [
-                      Text(
+                      const Text(
                         'All Bookings',
                         style: TextStyle(
                             fontSize: 12,
@@ -166,7 +166,7 @@ class HomeView extends StatelessWidget {
                       ),
                       Icon(
                         Icons.arrow_right_alt_rounded,
-                        color: Color(0xff888888),
+                        color: const Color(0xff888888),
                         size: screenWidth * 0.028
                         ,
                       )
