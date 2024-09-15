@@ -1,4 +1,4 @@
-class Images {
+class ImagesList {
   List<String> servicesImagesList = [];
 
   static List<String> serviceImages() {
@@ -10,7 +10,7 @@ class Images {
       'Waxing',
       'Threading',
       'Nultralucious 7D hifu',
-      'Lucious Slim Rf cavitation.png',
+      'Lucious Slim Rf cavitation',
     ];
   }
 }

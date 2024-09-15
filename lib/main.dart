@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lucious_beauty_app_ui_task_practice/views/home_view.dart';
-import 'package:lucious_beauty_app_ui_task_practice/views/login_view.dart';
-import 'package:lucious_beauty_app_ui_task_practice/views/register_view.dart';
-import 'package:lucious_beauty_app_ui_task_practice/views/splash_view.dart';
+
+import 'constants/project_colors.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,21 +17,36 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        scaffoldBackgroundColor: const Color(0xfffaf8f6),
+        // primarySwatch: const MaterialColor(
+        //   0xffE78377, // Base color
+        //   <int, Color>{
+        //     50: Color(0xFFF9E6E2), // Lightest shade
+        //     100: Color(0xFFF4D1C7),
+        //     200: Color(0xFFEBAA9B),
+        //     300: Color(0xFFE28F7D),
+        //     400: Color(0xFFD87D6C),
+        //     500: Color(0xffE78377), // Base color
+        //     600: Color(0xFFD16D5F),
+        //     700: Color(0xFFBF6454),
+        //     800: Color(0xFFAD5B49),
+        //     900: Color(0xFF8A3F36), // Darkest shade
+        //   },
+        // ),
+        scaffoldBackgroundColor: ProjectColors.bgColor,
         inputDecorationTheme: InputDecorationTheme(
-          labelStyle: const TextStyle(color: Colors.black87),
+          labelStyle: TextStyle(color: ProjectColors.blackColor),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(4),
-            borderSide: const BorderSide(
+            borderSide: BorderSide(
               width: 1,
-              color: Color(0xffdfdfdf),
+              color: ProjectColors.textFieldBorderColor,
             ),
           ),
-          fillColor: const Color(0xfff5f5f5),
+          fillColor: ProjectColors.textFieldFillColor,
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(4),
-            borderSide: const BorderSide(
-              color: Color(0xffdfdfdf),
+            borderSide: BorderSide(
+              color: ProjectColors.textFieldBorderColor,
               width: 2,
             ),
           ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lucious_beauty_app_ui_task_practice/components/custom_button.dart';
 import 'package:lucious_beauty_app_ui_task_practice/components/custom_text_field.dart';
+import 'package:lucious_beauty_app_ui_task_practice/constants/project_colors.dart';
 import 'package:lucious_beauty_app_ui_task_practice/constants/screen_size.dart';
 
 class LoginView extends StatefulWidget {
@@ -76,13 +77,13 @@ class _LoginViewState extends State<LoginView> {
               SizedBox(
                 height: screenHeight * 0.056650246,
               ),
-              const Row(
+              Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
                     'New user ? ',
                     style: TextStyle(
-                      color: Color(0xff888888),
+                      color: ProjectColors.text2Color,
                       fontFamily: 'Urbanist',
                       fontSize: 20,
                     ),
@@ -90,7 +91,7 @@ class _LoginViewState extends State<LoginView> {
                   Text(
                     'Register',
                     style: TextStyle(
-                      color: Color(0xffE78377),
+                      color: ProjectColors.reddishColor,
                       fontFamily: 'Urbanist',
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
